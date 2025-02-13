@@ -44,7 +44,6 @@ AI-Fitness-Recommender/
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/vikramraaja/AI-Personal-Workout-Recommender.git
-cd AI-Fitness-Recommender
 ```
 ### **2. Set Up the Backend**
 ```bash
@@ -91,4 +90,4 @@ npm start
 The **AI Personal Workout Recommender** provides **smart fitness recommendations** based on **ML predictions**, making fitness planning easier for users of all levels. 🚀💪
 
 ---
-📩 **For queries & contributions, reach out at:** your.email@example.com
+📩 **For queries & contributions, reach out at:** vikramkaruppannan6807@gmail.com
