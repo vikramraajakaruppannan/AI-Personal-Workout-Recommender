@@ -41,7 +41,7 @@ function App() {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await axios.post("http://127.0.0.1:8000/predict", formData);
+            const response = await axios.post("https://ai-personal-workout-recommender.onrender.com/", formData);
             setResult(response.data);
         } catch (error) {
             console.error("Error:", error);

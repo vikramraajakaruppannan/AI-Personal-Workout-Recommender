@@ -7,10 +7,14 @@ import uvicorn
 
 app = FastAPI()
 
+origins = [
+    "https://ai-personal-workout-recommender.vercel.app/",  # Replace with your actual frontend URL
+]
+
 # Enable CORS for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Only allow frontend
+    allow_origins=origins,  # Only allow frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
