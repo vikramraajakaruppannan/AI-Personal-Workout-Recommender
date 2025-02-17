@@ -17,8 +17,8 @@ app.add_middleware(
 )
 
 # Load trained model and encoders
-pipeline = joblib.load(r"D:\AI\AI-Workout-Recommender\nlp_fitness_model2.pkl")
-label_encoders = joblib.load(r"D:\AI\AI-Workout-Recommender\label_encoders2.pkl")
+pipeline = joblib.load("nlp_fitness_model2.pkl")
+label_encoders = joblib.load("label_encoders2.pkl")
 
 # Define request model
 class FitnessInput(BaseModel):
