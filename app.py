@@ -17,8 +17,8 @@ app.add_middleware(
 )
 
 # Load trained model and encoders
-pipeline = joblib.load("nlp_fitness_model2.pkl")
-label_encoders = joblib.load("label_encoders2.pkl")
+pipeline = joblib.load(r"D:\AI\AI-Workout-Recommender\nlp_fitness_model2.pkl")
+label_encoders = joblib.load(r"D:\AI\AI-Workout-Recommender\label_encoders2.pkl")
 
 # Define request model
 class FitnessInput(BaseModel):
@@ -36,7 +36,7 @@ def predict_fitness(input_data: dict):
     try:
         # Standardize key names
         if "Fitness_Goal" in input_data:
-            input_data["Fitness_Goal"] = input_data.pop("Fitness Goal")  # Rename key
+            input_data["Fitness Goal"] = input_data.pop("Fitness_Goal")  # Rename key
         
         # Encode categorical input values
         for col in ['Sex', 'Hypertension', 'Diabetes', 'Fitness Goal']:
