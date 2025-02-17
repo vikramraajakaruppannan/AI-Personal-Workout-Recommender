@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* Smooth Fade-In Effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Page Background - Gradient */
+body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    transition: background 0.3s ease;
+}
+
+/* Dark Mode Background */
+.dark-mode {
+    background: linear-gradient(135deg, #222, #555) !important;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+/* Hover & Focus Effects */
+.form-control:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0px 0px 8px rgba(255, 107, 107, 0.5);
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+/* Loading Progress Bar */
+.progress-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #ff6b6b;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+/* Results Section */
+.results {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Icons in Results */
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Download Button */
+.btn-success {
+    background-color: #1dd1a1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #10ac84;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: #ff4757;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .form-container {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+}
+
+.dark-mode .results {
+    background: rgba(40, 40, 40, 0.9);
+    color: white;
+}
+
+.dark-mode .form-control {
+    background: #222;
+    color: white;
+    border-color: #555;
+}
