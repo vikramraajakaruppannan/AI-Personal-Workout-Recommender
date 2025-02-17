@@ -89,5 +89,11 @@ npm start
 ## 🏆 Conclusion
 The **AI Personal Workout Recommender** provides **smart fitness recommendations** based on **ML predictions**, making fitness planning easier for users of all levels. 🚀💪
 
+
+# AI Personal Workout Recommender
+
+Check out the [frontend here](https://ai-personal-workout-recommender.vercel.app/) and the [backend here](https://your-backend-url-on-render.com/).
+
+
 ---
 📩 **For queries & contributions, reach out at:** vikramkaruppannan6807@gmail.com
