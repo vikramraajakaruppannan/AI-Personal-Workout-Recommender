@@ -16,7 +16,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,  # Only allow frontend
     allow_credentials=True,
-    allow_methods=["POST", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
@@ -62,7 +62,7 @@ def predict_fitness(input_data: dict):
     except Exception as e:
         return {"error": str(e)}
 
-@app.post("/predict")
+@app.post("/")
 def predict(data: FitnessInput):
     prediction = predict_fitness(data.dict())
     return prediction
