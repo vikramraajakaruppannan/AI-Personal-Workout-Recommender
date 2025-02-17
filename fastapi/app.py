@@ -8,7 +8,7 @@ import uvicorn
 app = FastAPI()
 
 origins = [
-    "https://ai-personal-workout-recommender-nqnggqc2o.vercel.app",  # Replace with your actual frontend URL
+    "https://ai-personal-workout-recommender.vercel.app",  # Replace with your actual frontend URL
 ]
 
 # Enable CORS for frontend integration
