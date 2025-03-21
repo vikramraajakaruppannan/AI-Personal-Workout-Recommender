@@ -92,7 +92,7 @@ The **AI Personal Workout Recommender** provides **smart fitness recommendations
 
 # AI Personal Workout Recommender
 
-Check out the [frontend here](https://ai-personal-workout-recommender.vercel.app/) and the [backend here](https://your-backend-url-on-render.com/).
+Check out the [Deployed Application](https://ai-workout-recommeder.vercel.app/).
 
 
 ---
