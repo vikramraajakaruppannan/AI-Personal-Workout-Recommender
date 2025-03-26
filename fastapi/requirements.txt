@@ -4,3 +4,6 @@ joblib
 pandas
 gunicorn
 scikit-learn
+twilio
+python-dotenv
+smtplib
