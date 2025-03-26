@@ -29,7 +29,7 @@ EMAIL_SENDER = "vikramraajak@gmail.com"
 EMAIL_PASSWORD = "uwwn orgx nqwc uhtj"
 
 
-origins = ["http://localhost:3000"]
+origins = ["https://ai-personal-workout-recommender.onrender.com/"]
 
 app.add_middleware(
     CORSMiddleware,
