@@ -113,7 +113,7 @@ const Home = () => {
             const Calories = calculateCalories(formData);
             const completeFormData = { ...formData, Calories };
             console.log("Sending data:", completeFormData);
-            const response = await axios.post("http://127.0.0.1:8000/", {
+            const response = await axios.post("https://ai-personal-workout-recommender.onrender.com/", {
                 Sex: completeFormData.Sex,
                 Age: completeFormData.Age,
                 Height: completeFormData.Height,
