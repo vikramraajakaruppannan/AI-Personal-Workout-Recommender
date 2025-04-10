@@ -183,7 +183,7 @@ const ResultPage = () => {
 
         setIsLoadingSMS(true);
         try {
-            const response = await axios.post("http://127.0.0.1:8000/send_sms/", {
+            const response = await axios.post("https://ai-personal-workout-recommender.onrender.com/send_sms/", {
                 phone_number: phoneNumber,
                 message
             });
@@ -220,7 +220,7 @@ const ResultPage = () => {
 
         setIsLoadingEmail(true);
         try {
-            const response = await axios.post("http://127.0.0.1:8000/send_email/", emailData);
+            const response = await axios.post("https://ai-personal-workout-recommender.onrender.com/send_email/", emailData);
             console.log("Email sent:", response.data);
             setErrorMsg(null);
             confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });

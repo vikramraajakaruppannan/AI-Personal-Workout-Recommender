@@ -29,11 +29,10 @@ EMAIL_SENDER = "vikramraajak@gmail.com"
 EMAIL_PASSWORD = "uwwn orgx nqwc uhtj"
 
 
-origins = ["https://ai-workout-recommeder.vercel.app"]
-
+# CORS Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["https://ai-workout-recommeder.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
