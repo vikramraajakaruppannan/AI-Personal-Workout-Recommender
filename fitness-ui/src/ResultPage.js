@@ -172,7 +172,6 @@ const ResultPage = () => {
 
         const message = `📢 Your Fitness Plan 📢\n
         🔥 Workout Level: ${optimizedResult.Level} (BMI: ${formData.BMI})\n
-        🏃 Exercises: ${optimizedResult.Exercises}\n
         Stay Fit & Healthy! 💪`.replace(/\s+/g, " ");
 
         setIsLoadingSMS(true);
