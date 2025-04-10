@@ -171,14 +171,8 @@ const ResultPage = () => {
         }
 
         const message = `📢 Your Fitness Plan 📢\n
-        🏋️ Goal: ${formData.Fitness_Goal}\n
-        👤 Age: ${formData.Age} | Sex: ${formData.Sex}\n
-        📏 Height: ${formData.Height} cm | ⚖️ Weight: ${formData.Weight} kg\n
-        📊 BMI: ${formData.BMI} | Diabetes: ${formData.Diabetes} | Hypertension: ${formData.Hypertension}\n
         🔥 Workout Level: ${optimizedResult.Level} (BMI: ${formData.BMI})\n
         🏃 Exercises: ${optimizedResult.Exercises}\n
-        🏋️ Equipment: ${optimizedResult.Equipment}\n
-        🍎 Diet: ${optimizedResult.Diet}\n
         Stay Fit & Healthy! 💪`.replace(/\s+/g, " ");
 
         setIsLoadingSMS(true);
